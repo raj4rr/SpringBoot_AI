@@ -1,0 +1,253 @@
+{
+  "forecastDays": 10,
+  "cities": [
+    {
+      "location": {
+        "city": "Berlin",
+        "country": "Germany",
+        "countryCode": "DE",
+        "latitude": 52.52,
+        "longitude": 13.405,
+        "timezone": "Europe/Berlin"
+      },
+      "forecast": [
+        {
+          "date": "2026-09-30",
+          "condition": "Partly Cloudy",
+          "temperature": {
+            "min": 11,
+            "max": 19
+          },
+          "feelsLike": {
+            "min": 10,
+            "max": 18
+          },
+          "precipitation": {
+            "probability": 20,
+            "amount": 0.5,
+            "unit": "mm"
+          },
+          "humidity": {
+            "min": 55,
+            "max": 82
+          },
+          "wind": {
+            "speed": 14,
+            "gust": 22,
+            "direction": "NW",
+            "directionDegrees": 315,
+            "unit": "km/h"
+          },
+          "cloudCover": 45,
+          "uvIndex": 2
+        },
+        {
+          "date": "2026-10-01",
+          "condition": "Light Rain",
+          "temperature": {
+            "min": 10,
+            "max": 17
+          },
+          "feelsLike": {
+            "min": 9,
+            "max": 16
+          },
+          "precipitation": {
+            "probability": 70,
+            "amount": 5.4,
+            "unit": "mm"
+          },
+          "humidity": {
+            "min": 68,
+            "max": 91
+          },
+          "wind": {
+            "speed": 18,
+            "gust": 30,
+            "direction": "W",
+            "directionDegrees": 270,
+            "unit": "km/h"
+          },
+          "cloudCover": 82,
+          "uvIndex": 1
+        },
+        {
+          "date": "2026-10-02",
+          "condition": "Cloudy",
+          "temperature": {
+            "min": 9,
+            "max": 16
+          },
+          "feelsLike": {
+            "min": 8,
+            "max": 15
+          },
+          "precipitation": {
+            "probability": 45,
+            "amount": 2.1,
+            "unit": "mm"
+          },
+          "humidity": {
+            "min": 65,
+            "max": 88
+          },
+          "wind": {
+            "speed": 15,
+            "gust": 25,
+            "direction": "W",
+            "directionDegrees": 275,
+            "unit": "km/h"
+          },
+          "cloudCover": 75,
+          "uvIndex": 2
+        }
+      ]
+    },
+
+    {
+      "location": {
+        "city": "Munich",
+        "country": "Germany",
+        "countryCode": "DE",
+        "latitude": 48.1351,
+        "longitude": 11.582,
+        "timezone": "Europe/Berlin"
+      },
+      "forecast": [
+        {
+          "date": "2026-09-30",
+          "condition": "Sunny",
+          "temperature": {
+            "min": 9,
+            "max": 21
+          },
+          "feelsLike": {
+            "min": 8,
+            "max": 21
+          },
+          "precipitation": {
+            "probability": 5,
+            "amount": 0,
+            "unit": "mm"
+          },
+          "humidity": {
+            "min": 45,
+            "max": 70
+          },
+          "wind": {
+            "speed": 8,
+            "gust": 15,
+            "direction": "E",
+            "directionDegrees": 90,
+            "unit": "km/h"
+          },
+          "cloudCover": 15,
+          "uvIndex": 4
+        },
+        {
+          "date": "2026-10-01",
+          "condition": "Partly Cloudy",
+          "temperature": {
+            "min": 10,
+            "max": 20
+          },
+          "feelsLike": {
+            "min": 9,
+            "max": 20
+          },
+          "precipitation": {
+            "probability": 20,
+            "amount": 0.3,
+            "unit": "mm"
+          },
+          "humidity": {
+            "min": 50,
+            "max": 74
+          },
+          "wind": {
+            "speed": 10,
+            "gust": 18,
+            "direction": "SE",
+            "directionDegrees": 135,
+            "unit": "km/h"
+          },
+          "cloudCover": 35,
+          "uvIndex": 3
+        }
+      ]
+    },
+
+    {
+      "location": {
+        "city": "Hamburg",
+        "country": "Germany",
+        "countryCode": "DE",
+        "latitude": 53.5511,
+        "longitude": 9.9937,
+        "timezone": "Europe/Berlin"
+      },
+      "forecast": [
+        {
+          "date": "2026-09-30",
+          "condition": "Cloudy",
+          "temperature": {
+            "min": 12,
+            "max": 18
+          },
+          "feelsLike": {
+            "min": 11,
+            "max": 17
+          },
+          "precipitation": {
+            "probability": 40,
+            "amount": 1.8,
+            "unit": "mm"
+          },
+          "humidity": {
+            "min": 70,
+            "max": 90
+          },
+          "wind": {
+            "speed": 20,
+            "gust": 32,
+            "direction": "NW",
+            "directionDegrees": 310,
+            "unit": "km/h"
+          },
+          "cloudCover": 80,
+          "uvIndex": 2
+        },
+        {
+          "date": "2026-10-01",
+          "condition": "Rain",
+          "temperature": {
+            "min": 11,
+            "max": 16
+          },
+          "feelsLike": {
+            "min": 10,
+            "max": 15
+          },
+          "precipitation": {
+            "probability": 80,
+            "amount": 7.2,
+            "unit": "mm"
+          },
+          "humidity": {
+            "min": 76,
+            "max": 94
+          },
+          "wind": {
+            "speed": 22,
+            "gust": 38,
+            "direction": "W",
+            "directionDegrees": 275,
+            "unit": "km/h"
+          },
+          "cloudCover": 90,
+          "uvIndex": 1
+        }
+      ]
+    }
+  ]
+}
