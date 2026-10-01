@@ -1,7 +1,9 @@
-package com.example.demo;
+package com.ai.agents.controller;
 
+import com.ai.agents.tools.WeatherTools;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.tool.annotation.Tool;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,7 +14,8 @@ import java.time.LocalDateTime;
 public class ChatController {
 
     private final ChatClient chatClient;
-
+    @Autowired
+    private WeatherTools weatherTools;
     public ChatController(ChatClient.Builder chatClientBuilder) {
         this.chatClient = chatClientBuilder
                 .defaultTools(this)
@@ -28,6 +31,16 @@ public class ChatController {
     public String chat(@RequestParam(value = "message", defaultValue = "Tell me a joke") String message) {
         return chatClient.prompt()
                 .user(message)
+                .call()
+                .content();
+    }
+
+    @GetMapping("/chatAdvanced")
+    public String chatAdvanced(@RequestParam(value = "message", defaultValue = "Tell me a joke") String message) {
+        return chatClient.prompt()
+                .user(message)
+              //  .tools(new DateTimeTools())
+                .tools(weatherTools)
                 .call()
                 .content();
     }
