@@ -2,6 +2,7 @@ package com.ai.agents.controller;
 
 import com.ai.agents.tools.WeatherTools;
 import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
 import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,13 +14,15 @@ import java.time.LocalDateTime;
 @RestController
 public class ChatController {
 
-    private final ChatClient chatClient;
     @Autowired
     private WeatherTools weatherTools;
+
+    private final ChatClient chatClient;
+
     public ChatController(ChatClient.Builder chatClientBuilder) {
-        this.chatClient = chatClientBuilder
-                .defaultTools(this)
-                .build();
+        this.chatClient = chatClientBuilder.defaultTools(this)
+                        .defaultAdvisors(new SimpleLoggerAdvisor()).
+                build();
     }
 
     @Tool(description = "Get the current real-world date and time")
